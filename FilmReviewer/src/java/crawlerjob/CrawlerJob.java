@@ -18,10 +18,7 @@ public class CrawlerJob {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        CrawlerTimerTask ctt = new CrawlerTimerTask();
         
-        Timer t = new Timer();
-        t.scheduleAtFixedRate(ctt, 0, 5*1000);
     }
     
 }

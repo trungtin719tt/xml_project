@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/Tin/fpt3/prx/xml_project/FilmReviewer/web/xsd/goodreads.xsd" uri="src/conf/xml-resources/jaxb/BookCrawlSource/goodreads.xsd"/>
+    <system systemId="file:/D:/Tin/fpt3/prx/xml_project/FilmReviewer/web/xsd/crawlsourcce.xsd" uri="src/conf/xml-resources/jaxb/CrawlSource/crawlsourcce.xsd"/>
+</catalog>

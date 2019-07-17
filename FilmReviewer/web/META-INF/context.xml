@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/FilmReviewer"/>
+<Context antiJARLocking="true" path="/FilmReviewer">
+    <Resource username="sa"
+           password="1"
+           url="jdbc:sqlserver://localhost:1433;databaseName=BookDB;instanceName=TinNT"
+           driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+           auth="Container"
+           type="javax.sql.DataSource"
+           name="dbcontext"/>
+</Context>

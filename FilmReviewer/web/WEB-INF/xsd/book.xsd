@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://trungtin719.tt/2019/xml"
+           xmlns="http://trungtin719.tt/2019/xml"
+           elementFormDefault="qualified">
+           
+    <xs:complexType name="Review">
+        <xs:sequence>
+            <xs:element name="ReviewBy" type="xs:string"/>
+            <xs:element name="ReviewContent" type="xs:string"/>
+            <xs:element name="Score" type="xs:float" minOccurs="0"/>
+            <xs:element name="NumberOfLikes" type="xs:int" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:element name="Book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Name" type="xs:string"/>
+                <xs:element name="Author" type="xs:string"/>
+                <xs:element name="Score" type="xs:float"/>
+                <xs:element name="review" type="Review" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

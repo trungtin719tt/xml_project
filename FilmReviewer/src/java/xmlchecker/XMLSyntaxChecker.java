@@ -257,7 +257,7 @@ public class XMLSyntaxChecker {
         for (Map.Entry<String, String> entry : attributes.entrySet()) {
             String value = entry.getValue()
                     .replace("&", "&amp;")
-                    .replaceAll("\"", "&qout;")
+                    .replaceAll("\"", "&quot;")
                     .replaceAll("'", "&apos;")
                     .replaceAll("<", "&lt;")
                     .replaceAll(">", "&gt;");

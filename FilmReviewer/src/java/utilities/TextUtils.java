@@ -57,6 +57,12 @@ public class TextUtils {
         expression  = "&nbsp;?";
         result = result.replaceAll(expression, "");
         
+        expression = "//<!\\[CDATA\\[";
+        result = result.replaceAll(expression, "");
+        
+        expression = "//\\]\\]>";
+        result = result.replaceAll(expression, "");
+        
         return result;
     }
     

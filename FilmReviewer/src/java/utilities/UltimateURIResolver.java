@@ -28,13 +28,12 @@ public class UltimateURIResolver implements URIResolver{
 
     @Override
     public Source resolve(String href, String base) throws TransformerException {
-        if (href != null && href.indexOf("https://vi.wikipedia.org/") == 0){
+        if (href != null){
             try {
-                InputStream httpResult = new URL(href).openStream();
                 URL url = new URL(href);
                 System.out.println(href);
                 URLConnection connection = url.openConnection();
-                connection.setReadTimeout(30 * 1000);
+//                connection.setReadTimeout(30 * 1000);
                 connection.setConnectTimeout(30 * 1000);
                 StreamSource ss = preProcessInputStream(connection.getInputStream());
                 return ss;
